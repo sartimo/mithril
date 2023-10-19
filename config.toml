@@ -1,4 +1,4 @@
-baseURL = "https://timosarkar.netlify.app"
+baseURL = ""
 languageCode = "en-us"
 title = "Timo Sarkar"
 theme = "hugo-natrium-theme"
