@@ -6,6 +6,7 @@ theme = "hugo-natrium-theme"
 publishDir = "dist"
 relativeURLs = true
 canonifyURLs = true
+disqusShortname = 'timosarkar'
 
 preserveTaxonomyNames = true
 rssLimit = 10
