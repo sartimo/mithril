@@ -6,7 +6,7 @@ theme = "hugo-natrium-theme"
 publishDir = "dist"
 relativeURLs = true
 canonifyURLs = true
-disqusShortname = 'timosarkar'
+disqusShortname = 'timosarkar-netlify-app'
 
 preserveTaxonomyNames = true
 rssLimit = 10
