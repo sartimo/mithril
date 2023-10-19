@@ -1,4 +1,4 @@
-baseURL = "https://hyperupcall.github.io/blog/"
+baseURL = "https://timosarkar.netlify.app/blog/"
 languageCode = "en-us"
 title = "Timo Sarkar"
 theme = "hugo-natrium-theme"
