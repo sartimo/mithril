@@ -1,4 +1,4 @@
-baseURL = 'https://sartimo.github.io/blog/'
+baseURL = 'https://timosarkar.netlify.app'
 languageCode = "en-us"
 title = "Timo Sarkar"
 theme = "hugo-natrium-theme"
@@ -33,17 +33,17 @@ page = "/:slug/"
 
 [[menu.main]]
 name = "About"
-url = "/about/"
+url = "https://timosarkar.netlify.app/about/"
 weight = -110
 
 [[menu.main]]
 name = "Tags"
-url = "/tags"
+url = "https://timosarkar.netlify.app/tags"
 weight = -120
 
 [[menu.main]]
 name = "Categories"
-url = "/categories"
+url = "https://timosarkar.netlify.app/categories"
 weight = -130
 
 [params]
