@@ -1,33 +1,29 @@
-name: github pages
+name: Deploy Website to Surge.sh
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+    if: contains(github.event.head_commit.message, 'DEPLOY')
+    name: Deploying to surge
+    
     steps:
       - uses: actions/checkout@v3
-        with:
-          submodules: true
-          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.85.0'
-          # extended: true
+          hugo-version: '0.92.2'
+      
+      - run: sudo apt install hugo
+      - run: git submodule update --init --recursive
+      - run: hugo
 
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+      - name: setup nodejs
+        uses: actions/setup-node@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          node-version: latest
+          
+      - run: npm install -g surge
+      - run: surge dist/ sartimo.surge.sh --token e98ddba361dbc1621c840b6a235a322e
