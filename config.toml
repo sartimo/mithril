@@ -1,4 +1,4 @@
-baseURL = 'https://timosarkar.netlify.app'
+baseURL = 'https://sartimo.surge.sh'
 languageCode = "en-us"
 title = "Timo Sarkar"
 theme = "hugo-natrium-theme"
@@ -33,17 +33,17 @@ page = "/:slug/"
 
 [[menu.main]]
 name = "About"
-url = "https://timosarkar.netlify.app/about/"
+url = "/about/"
 weight = -110
 
 [[menu.main]]
 name = "Tags"
-url = "https://timosarkar.netlify.app/tags"
+url = "/tags"
 weight = -120
 
 [[menu.main]]
 name = "Categories"
-url = "https://timosarkar.netlify.app/categories"
+url = "/categories"
 weight = -130
 
 [params]
