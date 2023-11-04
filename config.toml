@@ -50,7 +50,7 @@ weight = -130
 description = ""
 
 [params.logo]
-url = "logo.png"
+url = "/logo.png"
 width = 50
 height = 50
 alt = "Logo"
