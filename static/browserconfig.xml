@@ -2,7 +2,7 @@
 <browserconfig>
 	<msapplication>
 		<tile>
-			<square150x150logo src="https://hyperupcall.github.io/blog/mstile-150x150.png?v=1" />
+			<square150x150logo src="https://raw.githubusercontent.com/sartimo/blog/master/static/mstile-150x150.png" />
 			<TileColor>#da532c</TileColor>
 		</tile>
 	</msapplication>
